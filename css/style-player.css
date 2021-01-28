@@ -1,0 +1,72 @@
+.player {
+  background: none;
+  width: 450px;
+  height: 630px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 100px auto;
+  overflow: hidden;
+}
+.seek {
+  width: 60%;
+  height: 7px;
+  margin: 0 auto;
+  background: rebeccapurple;
+  border-radius: 50px;
+}
+.seek .fill {
+  width: 0;
+  height: 7px;
+  background: rebeccapurple;
+  border-radius: 50px;
+}
+
+.audio-btns {
+  background: none;
+  margin: 45px auto;
+  width: 100%;
+  text-align: center;
+}
+.audio-btns a:hover {
+  cursor: pointer;
+  color: purple !important;
+}
+
+.play-btns {
+  padding: 80px 0 0px 0;
+}
+.play-btns a {
+  color: white;
+  margin: 0 2px;
+  font-size: 1.2em;
+  transition: all 0.5;
+}
+
+.play-btns .play-pause {
+  padding: 22px 22px 22px 25px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 50px #111;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
