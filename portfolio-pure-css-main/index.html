@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lucas Soares</title>
+        <!-- Style css --> 
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    </head>
+    <body>
+        <!-- Menu -->
+        <header class="cabecalho">
+            <nav>
+                <h1>Lucas Dev </h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Tecnologias</a></li>
+                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/">Projetos</a></li>
+                    <li><a href="/">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="lucasLogo">
+                <h3>Lucas Soares</h3>
+                <h4>Desenvolvedor Web</h4>
+                <img src="images/linkedin.png">
+                <img src="images/github.png">
+            </div>
+            <div class="redeSociais">
+                <img src="images/instagram.png">
+                <img src="images/whatsapp.png">
+            </div>
+            <div class="buttonOrcamento">
+                <button>Faça seu Orçamento</button>
+            </div>
+        </header>
+        <!-- Tecnologias -->
+        <div class="habilidades container">
+            <div class="tecnologias">
+                <div class="tituloContainer">
+                    <h1>Tecnologias</h1>
+                    <hr>
+                    <hr>
+                </div>
+                    <div class="bloco">
+                        <div class="item">
+                            <img src="images/Untitled-1.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Untitled-1.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Untitled-1.png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Untitled-1.png">
+                        </div>
+                </div>
+            </div>
+            <div class="ferramentas">
+                <div class="tituloContainer">
+                    <h1>Ferramentas</h1>
+                    <hr>
+                    <hr>
+                </div>
+                    <div class="bloco">
+                        <div class="item">
+                            <img src="images/Group 2 (1).png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Group 2 (1).png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Group 2 (1).png">
+                        </div>
+                        <div class="item">
+                            <img src="images/Group 2 (1).png">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Slide -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+          <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,        
+            },
+            loop: true,
+            autoplay: {
+                delay: 1000,
+            },
+        });
+        </script>
+    </body>
+</html>

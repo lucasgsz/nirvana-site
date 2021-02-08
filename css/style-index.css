@@ -9,7 +9,6 @@ a {
   text-decoration: none;
   list-style: none;
 }
-/* Cabecalho */
 
 /* Estilos Padrão Blocos */
 .tituloBlocos {
@@ -38,6 +37,7 @@ a {
 .tituloBlocos::after {
   top: 100%;
 }
+
 
 /* AGENDA */
 
@@ -155,7 +155,6 @@ a {
   color: white;
   padding: 15px;
   border-radius: 10px;
-
   display: grid;
   text-align: center;
   margin: 10px;

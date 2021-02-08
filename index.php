@@ -9,13 +9,14 @@ $teste = "SELECT * FROM agenda";
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
+		
 		<title>Nirvana - Site Oficial</title>
 
 		<!-- Swiper -->
-        <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.css" />
         
 		<!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		<link href="css/bootstrap.min.css" rel="stylesheet"
 			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 		
 		<!-- Estilo Padrão -->
@@ -399,7 +400,7 @@ $teste = "SELECT * FROM agenda";
 		</div>
 
 		<!-- Historia da Banda -->
-		<div class="container mt-5 mb-5 bg-warning p-4" id="historia">
+		<div class="container mt-5 mb-5 bg-warning p-5" id="historia">
             <div class="row">
                 <div class="col-md-5">
                     <div class="swiper-container swiper-container-historia swiper-container-texto">
@@ -416,7 +417,7 @@ $teste = "SELECT * FROM agenda";
                                 </p>
                                 <p>
                                     
-O vídeo, datado de 28 de dezembro de 1988 e registrado no The Underground de Seattle, mostra a banda formada naquela época por Kurt Cobain (voz e guitarra) Krist Novoselic (baixo) e Chad Channing (bateria) interpretando “School”, faixa que seria lançada no ano seguinte em seu primeiro álbum, Bleach.
+                                O vídeo, datado de 28 de dezembro de 1988 e registrado no The Underground de Seattle, mostra a banda formada naquela época por Kurt Cobain (voz e guitarra) Krist Novoselic (baixo) e Chad Channing (bateria) interpretando “School”, faixa que seria lançada no ano seguinte em seu primeiro álbum, Bleach.
                                 </p>
                             </div>
                             <div class="swiper-slide d-grid text-center">
@@ -475,7 +476,7 @@ O vídeo, datado de 28 de dezembro de 1988 e registrado no The Underground de Se
         <script src="script/player-musica.js"></script>
         
 		<!-- Boostrap Js -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		<script src="script/bootstrap.bundle.js"
 				integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
 				crossorigin="anonymous">
         </script>
@@ -488,7 +489,7 @@ O vídeo, datado de 28 de dezembro de 1988 e registrado no The Underground de Se
         </script>
         
 		<!-- Swiper(Slides) Objetos/Variaveis -->
-        <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="script/swiper-bundle.js"></script>
 		<script>	
 			var mySwiperAgenda = new Swiper(".swiper-container-agenda", {
 				slidesPerView: 1,

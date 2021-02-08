@@ -1,0 +1,211 @@
+/* Fonte Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+/* Comfortaa e Coda */
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Comfortaa:wght@300;700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Montserrat:wght@300;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS PADRAO */
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #fdfffc;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 30px;
+    padding: 30px 20px;
+}
+/* Titulos Container */
+.tituloContainer{
+
+    padding-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #087ca7;
+    font-family: 'Lato';
+}
+.tituloContainer > hr:nth-child(2n){
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: solid 2px #087ca7;
+    border-radius: 10px;
+}
+.tituloContainer  > hr:nth-child(3n){
+    width: 250px;
+    margin: 0 auto;
+    border: solid 2px #087ca7;
+    border-radius: 10px;
+}
+
+/* Navbar */
+.cabecalho{
+    background-image: url("/images/background-menu.png");
+    background-size: cover;
+    
+    height: 400px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    display: flexbox;
+}
+.cabecalho > nav > h1{
+    font-weight: 700;
+    text-shadow: 0 0 4px white;
+}
+/* barra de navegacao */
+.cabecalho > nav{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+.cabecalho > nav > ul{
+    display: inline-flex;
+}
+
+.cabecalho > nav > ul > li > a{
+    color: white;
+    margin: 15px;
+    font-weight: 500;
+}
+
+/* Logo Menu Lucas */
+.cabecalho > div.lucasLogo{
+    font-size: 3rem;
+    margin-top: 55px;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    text-shadow: 0 0 4px white;
+}
+.cabecalho > div.lucasLogo > img{
+    width: 32px;
+}
+
+.cabecalho > div.lucasLogo > h4{
+    font-weight: 300;
+}
+
+/* Redes Sociais */
+.redeSociais{
+    display: flex;
+    margin: 0 10px;
+    position: absolute;
+    top: 360px;
+}
+.redeSociais > img{
+    margin: 0 5px;
+    width: 25px;
+}
+
+/* Botao menu orcamento */
+.cabecalho > div.buttonOrcamento{
+    display: flex;
+    justify-content: center;
+    
+}
+.cabecalho > div.buttonOrcamento > button{
+    position: absolute;
+    top: 350px;
+    background: none;
+    width: 220px;
+    padding: 5px;
+    border-radius: 50px;
+    border: solid 2px white;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Coda', sans-serif;
+    font-size: 1rem;
+    transition: 0.5s;
+    
+}
+.cabecalho > div.buttonOrcamento > button:hover{
+    background-color: white;
+    color: #0089B2;
+    box-shadow: 0 0 7px white;
+}
+
+/* HABILIDADES */
+.habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;   
+}
+.bloco > div.item{
+    margin: 0 10px;
+    display: flex;
+}
+@media screen and (max-width: 1300px){
+    .habilidades{
+        grid-template-columns: 1fr;
+
+    }
+    .bloco{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .ferramentas > div.tituloContainer > h1{
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 700px){
+    .habilidades{
+        grid-template-columns: 1fr;
+    }
+    .bloco{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .ferramentas > div.tituloContainer > h1{
+        margin-top: 60px;
+    }
+}
+
+/* Swiper Slide */
+.swiper-container {
+    width: 100%;
+    height: 500px;  
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color:#0089B2;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
